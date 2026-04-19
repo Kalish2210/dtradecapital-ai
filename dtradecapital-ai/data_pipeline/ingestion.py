@@ -1,1 +1,4 @@
-# DTrade Capital — D Terminal AI Engine
+import pandas as pd
+def load_data(path):
+    df = pd.read_csv(path)
+    return df.to_dict(orient="records")
